@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="521.0" style="-fx-background-color: #ffffff;" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.exercise1excel.MainController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="29.0" layoutY="22.0" promptText="Table Name" styleClass="text" />
+      <TextField fx:id="columnsTextField" layoutX="192.0" layoutY="22.0" promptText="Columns" styleClass="text" />
+      <Button layoutX="356.0" layoutY="22.0" mnemonicParsing="false" onAction="#createTable" styleClass="lion" text="Create Table" />
+      <Button layoutX="356.0" layoutY="99.0" mnemonicParsing="false" onAction="#execute" prefHeight="26.0" prefWidth="137.0" styleClass="lion" text="Execute" />
+      <Button layoutX="356.0" layoutY="61.0" mnemonicParsing="false" onAction="#deleteTable" styleClass="lion" text="Delete Table" />
+      <TextArea fx:id="sqlTextArea" layoutX="29.0" layoutY="61.0" prefHeight="203.0" prefWidth="312.0" promptText="Sql" wrapText="true" />
+   </children>
+</Pane>
